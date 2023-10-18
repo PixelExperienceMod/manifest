@@ -25,11 +25,11 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 export USE_CCACHE=1 && export CCACHE_DIR=~/android/ccache/pe && export CCACHE_EXEC=/usr/bin/ccache && ccache -M 50G
 
 # Set up environment
-$ . build/envsetup.sh
+. build/envsetup.sh
 
 # Choose a target
-$ lunch aosp_ruby-userdebug
+lunch aosp_ruby-userdebug
 
 # Build the code
-$ mka bacon -j$(nproc --all)
+mka bacon -j$(nproc --all)
 ```
