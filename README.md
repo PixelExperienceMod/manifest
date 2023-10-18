@@ -4,7 +4,7 @@ You can build PixelExperience thirteen-plus for ruby as follows.
 
 ```bash
 # Create directories
-mdkir ~/android/pe
+mkdir ~/android/pe
 mkdir -p ~/android/ccache/pe
 
 # Initialize local repository
